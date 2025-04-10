@@ -1,0 +1,18 @@
+
+
+{
+  "manifest_version": 3,
+  "name": "React Tracking",
+  "version": "1.0.0",
+  "description": "Tracking Websites,Saving Works",
+  "action": {
+    "default_popup": "index.html"
+  },
+  "permissions": ["scripting", "tabs", "history","storage","alarms","notifications","unlimitedStorage"],
+  "background": {
+    "service_worker": "background.js",
+    "type":"module"
+  },
+
+  "host_permissions": ["http://*/*", "https://*/*"]
+}
